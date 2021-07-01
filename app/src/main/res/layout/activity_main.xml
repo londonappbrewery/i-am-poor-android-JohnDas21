@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,14 +12,30 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/first_part"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="50dp"
-        android:text="@string/app_name"
+        android:text="@string/first_part"
         android:textColor="@android:color/background_light"
         android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/last_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_part"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/first_part"
+        android:layout_toEndOf="@id/first_part"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        />
 
     <ImageView
         android:id="@+id/imageView"
